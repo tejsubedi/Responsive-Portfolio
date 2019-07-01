@@ -2,30 +2,34 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    padding: 5px;
+    padding: 0;
     background: url(../assets/image/beige-tiles.png);
-    margin: auto;
 }
 /* Global*/
 .container{
-    width: 960px;
+    width: 68%;
+    overflow: scroll;
     margin: auto;
+}
+.sub-container {
+    margin-left: 5px;
+}
+#main-content {
+    margin-left: 5px;
+    
 }
 ul{
     margin: 0;
     padding: 0;
 }
+
 /* Header*/
 header{
-    /* background-color: #f4f4f4; */
     background-color: #ffffff;
     color: #d8cfcf;
     padding-top:  30px;
-    margin-bottom: 10px;
     min-height: 50px;
     border-bottom: solid #cccccc 3px;
-    width: 960px;
-    margin: auto;
 }
 
 header a{
@@ -36,26 +40,24 @@ header a{
 }
 header li {
     display: inline;
-    padding: 0 15px 0 15px;
+    padding: 0 20px 0 20px;
 }
-header #name{
+header #branding{
     float: left;
 }
-header #name h1{
+header #branding h1{
     margin: 0;
 }
 header nav{
     float: right;
-    margin-top: 15px;
+    margin-top: 10px;
 }
-header .highlight{
+header .highlight  {
     background-color: #4aaaa5   ;
     font-weight: bold;
     color:#ebeef0;
-    padding-top: 5px;
-    
 }
-.current a{
+header .current a{
     color: #239B56;
     font-weight: bold;
 }
@@ -63,6 +65,30 @@ header a:hover{
     color: #e8491d;
     font-weight: bold;
 }
+
+/* Showcase */
+#showcase{
+    min-height: 50px;
+    background-color: #ffffff;
+    color: green;
+    min-height: 500px;
+    max-height: 550px;
+}
+#showcase h1{
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+#boxes{
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+#boxes .box img{
+    width: 200px;
+    height: 150px;
+ }
+
 #maincontent {
     background-color: #ffffff;
     min-height: 500px;
@@ -103,13 +129,10 @@ img{
 
 footer{
     padding: 10px;
-    margin-top: 0px;
+    margin-top: 10px;
     color:#ebeef0;
     background: #666666;
     text-align: center;
-    border-top: solid #239B56 5px;
-    position: fixed;
-    width: 100%;
 }
 /* Contact Page */
 
@@ -165,3 +188,36 @@ input[type=text], select, textarea {
       top: 145px;
       text-align: center;
   }
+
+  /*Media Query*/
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase{
+        margin-top: 40px;
+    }
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    body{
+        background-color: blue;
+    }
+}
