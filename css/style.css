@@ -148,7 +148,7 @@ input[type=text], select, textarea {
       background-color: green;
       color: #ffffff;
       border: 2px solid rgb(55, 0, 128);
-      top: 145px;
+      top: 175px;
       text-align: center;
   }
 
@@ -169,6 +169,22 @@ input[type=text], select, textarea {
     footer {
         position: static;
     }
+    #flex {
+        display: block;
+        width: 50%;
+    }
+    #flex1 {
+        display: block;
+        width: 50%;
+    }
+    .fixed {
+        position: static;
+    }
+    .hello {
+        top: -50px;
+    }
+    
+    
     
 }
 
