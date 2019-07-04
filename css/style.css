@@ -153,7 +153,7 @@ input[type=text], select, textarea {
   }
 
   /*Media Query*/
-  @media only screen and (max-width: 640px){
+   @media only screen and (max-width: 640px){
     .container,
     header #branding,
     header nav,
@@ -184,8 +184,6 @@ input[type=text], select, textarea {
         top: -50px;
     }
     
-    
-    
 }
 
   @media only screen and (min-width: 641px) and (max-width: 768px){
@@ -205,32 +203,25 @@ input[type=text], select, textarea {
     footer {
         position: static;
     }
-
-} 
-
-
-@media only screen and (min-width: 769px) and (max-width: 980px){
-     .container,
-    header #branding,
-    header nav,
-    header nav li
-    { 
-        float: none;
-        text-align: center;
-        width: 100%;
+    #flex {
+        display: block;
+        width: 50%;
     }
-    header{
-        padding-bottom: 20px;
+    #flex1 {
+        display: block;
+        width: 50%;
     }
-    footer {
+    .fixed {
         position: static;
     }
-    
+    .hello {
+        top: -50px;
+    }
 
 }  
 
- /* @media only screen and (min-width: 980px){
 
+/* @media only screen and (min-width: 769px) and (max-width: 980px){
     .container,
     header #branding,
     header nav,
@@ -246,10 +237,58 @@ input[type=text], select, textarea {
     footer {
         position: static;
     }
-    .main-content .flex .flex1{
+    #flex {
         display: block;
+        width: 50%;
+    }
+    #flex1 {
+        display: block;
+        width: 50%;
+    }
+    .fixed {
+        position: static;
+    }
+    .hello {
+        top: -50px;
+    }
+    
+
+}   */
+
+  /* @media only screen and (min-width: 980px){
+
+    .container,
+    header #branding,
+    header nav,
+    header nav li
+    {   
+        float: none;;
+        text-align: center;
         width: 100%;
     }
-}   */
+    header{
+        padding-bottom: 20px;
+    }
+    header li {
+        display: inline;
+    }
+    footer {
+        position: static;
+    }
+    #flex {
+        display: block;
+        width: 50%;
+    }
+    #flex1 {
+        display: block;
+        width: 50%;
+    }
+    .fixed {
+        position: static;
+    }
+    .hello {
+        top: -50px;
+    }
+}    */
 
   
